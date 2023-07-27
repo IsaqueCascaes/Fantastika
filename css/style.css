@@ -32,6 +32,16 @@ header ul {
     list-style: none;
 }
 
+.redesSociais img {
+    transform: scale(1.0);
+    transition: 0.3s;
+}
+
+.redesSociais img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
 main {
     display: flex;
     flex-direction: column;
