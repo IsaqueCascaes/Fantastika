@@ -17,7 +17,6 @@ header div {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-
 }
 
 .logoFantastika {
@@ -60,19 +59,36 @@ main h3 {
     font-weight: 900;
     font-size: 60px;
     position: relative;
-    bottom: 3rem;
+    bottom: 7rem;
+}
+
+.img-pata {
+position: relative;
+bottom: 5rem;
 }
 
 .blocoInformacoesServicos {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 130vh;
     background-image: url(/images/cachorroLeao.png);
     background-position: center right;
-    background-size: 70vw;
+    background-size: 100vw;
     background-repeat: no-repeat;
     background-color: #f4f2f3;
+}
+
+.blocoInformacoesServicos2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 130vh;
+    background-image: url(/images/cachorropreto.png);
+    background-position: left top;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    color: #fff;
 }
 
 .informacoesServicos h3,
@@ -81,12 +97,21 @@ main h3 {
     padding: 1.2rem 2rem;
 }
 
-.informacoesServicos h3 {
+.informacoesServicos h3,
+.informacoesServicos2 h3 {
     font-size: 60px;
     font-weight: 800;
 }
 
-.informacoesServicos p {
+.informacoesServicos2 h3 {
+    position: relative;
+    right: 6rem;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.informacoesServicos p,
+.informacoesServicos2 p {
     width: 50%;
     font-size: 25px;
     font-weight: 400;
@@ -94,6 +119,7 @@ main h3 {
 }
 
 .informacoesServicos button {
+
     width: 12rem;
     height: 4.5rem;
     font-size: 20px;
@@ -105,7 +131,88 @@ main h3 {
     transition: 0.3s;
 }
 
+.informacoesServicos2 button {
+
+    width: 12rem;
+    height: 4.5rem;
+    font-size: 20px;
+    font-weight: 700;
+    color: #24201d;
+    border-radius: 40px;
+    border: none;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.informacoesServicos2 button:hover {
+    background-color: #b4b3b3;
+    transition: 0.3s;
+}
+
 .informacoesServicos button:hover {
     background-color: #24201d;
     transition: 0.3s;
+}
+
+.informacoesServicos2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+.informacoesServicos2 h3,
+.informacoesServicos2 p,
+.informacoesServicos2 .blocoBotao2 {
+    padding: 1.2rem 2rem;
+}
+
+.informacoesServicos2 .blocoBotao2 {
+    width: 50vw;
+}
+
+.bloco-patrocinadores {
+    padding: 4rem;
+}
+
+.patrocinadores {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.patrocinadores p {
+    font-size: 30px;
+    color: #FD6A9A;
+}
+
+.bloco-informacoes-adicionais {
+    height: 50vh;
+    background-color: #EB4A7B;
+    color: #fff;
+
+}
+
+.bloco-geral {
+    display: flex;
+    gap: 6rem;
+    padding: 4.8rem 8rem;
+}
+
+.bloco-geral h3 {
+    font-size: 30px;
+    padding-bottom: 1rem;
+}
+
+.bloco-geral ul {
+    list-style: none;
+}
+
+.bloco-geral ul li {
+    padding-bottom: 1rem;
+}
+
+.bloco-geral a {
+    text-decoration: none;
+    color: #fff;
 }
