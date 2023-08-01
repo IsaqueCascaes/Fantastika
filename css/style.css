@@ -63,8 +63,8 @@ main h3 {
 }
 
 .img-pata {
-position: relative;
-bottom: 5rem;
+    position: relative;
+    bottom: 5rem;
 }
 
 .blocoInformacoesServicos {
@@ -97,15 +97,15 @@ bottom: 5rem;
     padding: 1.2rem 2rem;
 }
 
-.informacoesServicos h3,
-.informacoesServicos2 h3 {
+.informacoesServicos h3 {
     font-size: 60px;
     font-weight: 800;
 }
 
 .informacoesServicos2 h3 {
+    width: 50vw;
     position: relative;
-    right: 6rem;
+    text-align: start;
     font-size: 60px;
     font-weight: 800;
 }
@@ -160,8 +160,6 @@ bottom: 5rem;
     align-items: flex-end;
 }
 
-
-
 .informacoesServicos2 h3,
 .informacoesServicos2 p,
 .informacoesServicos2 .blocoBotao2 {
@@ -215,4 +213,150 @@ bottom: 5rem;
 .bloco-geral a {
     text-decoration: none;
     color: #fff;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1150px) {
+    .blocoInformacoesServicos {
+        height: 130vh;
+        background-position: center right;
+        background-size: cover;
+    }
+
+    .blocoInformacoesServicos2 {
+        height: 130vh;
+        background-position: left top;
+        background-size: cover;
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px) {
+
+    main {
+        background-size: cover;
+        background-position: center bottom;
+        height: 100vh;
+    }
+
+    main h3 {
+        font-weight: 900;
+        font-size: 50px;
+    }
+
+    .img-pata {
+        width: 90%;
+        bottom: 6rem;
+    }
+
+
+    .blocoInformacoesServicos {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .informacoesServicos h3,
+    .informacoesServicos2 h3 {
+        font-size: 50px;
+        font-weight: 800;
+    }
+
+    .informacoesServicos p,
+    .informacoesServicos2 p {
+        width: 50%;
+        font-size: 22px;
+        font-weight: 400;
+        text-align: start;
+    }
+
+    .blocoInformacoesServicos2 {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .patrocinadores p {
+        font-size: 28px;
+    }
+
+    .patrocinadores img {
+        width: 80%;
+    }
+
+    .bloco-geral h3 {
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+
+    main {
+        background-image: url(/images/images-mobile/cahorroRosaMob.png);
+        background-size: 110vh;
+        background-position: center bottom;
+        height: 150vh;
+    }
+
+    main h3 {
+        width: 80%;
+        font-weight: 900;
+        font-size: 50px;
+        bottom: 18rem;
+    }
+
+    .img-pata {
+        width: 90%;
+        bottom: 14rem;
+    }
+
+
+    .blocoInformacoesServicos {
+        justify-content: flex-start;
+        padding-top: 3rem;
+        background-image: url(/images/images-mobile/cachorroLeaoMob.png);
+        background-position: bottom;
+        background-size: 100vw;
+        height: 150vh;
+        background-size: cover;
+    }
+
+    .informacoesServicos h3,
+    .informacoesServicos2 h3 {
+        font-size: 50px;
+        font-weight: 800;
+    }
+
+    .informacoesServicos p,
+    .informacoesServicos2 p {
+        width: 90%;
+        font-size: 22px;
+        font-weight: 400;
+        text-align: start;
+    }
+
+    .blocoInformacoesServicos2 {
+        height: 150vh;
+        background-image: url(/images/images-mobile/cachorroPretoMob.png);
+        background-size: cover;
+    }
+
+/* AJEITAR BLOCO CAHORRO PRETO MOBILE DEIXAR BLOCO PRA CIMA */
+
+.informacoesServicos2 {
+    position: relative;
+    padding-bottom: 1rem;
+    align-items: flex-start;
+}
+
+    .patrocinadores p {
+        font-size: 28px;
+    }
+
+    .patrocinadores img {
+        width: 80%;
+    }
+
+    .bloco-geral h3 {
+        font-size: 28px;
+    }
+
 }
