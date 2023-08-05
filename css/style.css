@@ -176,7 +176,15 @@ main h3 {
 
 .patrocinadores {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
+}
+
+.patrocinadores figure {
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .patrocinadores p {
@@ -195,6 +203,15 @@ main h3 {
     display: flex;
     gap: 6rem;
     padding: 4.8rem 8rem;
+}
+
+.fantastika {
+    width: 0;
+}
+
+.fantastika h2 {
+    width: 0;
+    font-size: 0;
 }
 
 .bloco-geral h3 {
@@ -224,7 +241,6 @@ main h3 {
 
     .blocoInformacoesServicos2 {
         height: 130vh;
-        background-position: left top;
         background-size: cover;
     }
 
@@ -233,9 +249,8 @@ main h3 {
 @media screen and (min-width: 800px) and (max-width: 999px) {
 
     main {
-        background-size: cover;
-        background-position: center bottom;
-        height: 100vh;
+
+        height: 120vh;
     }
 
     main h3 {
@@ -250,8 +265,7 @@ main h3 {
 
 
     .blocoInformacoesServicos {
-        height: 100vh;
-        background-size: cover;
+        height: 120vh;
     }
 
     .informacoesServicos h3,
@@ -269,8 +283,8 @@ main h3 {
     }
 
     .blocoInformacoesServicos2 {
-        height: 100vh;
-        background-size: cover;
+        height: 120vh;
+background-size: cover;
     }
 
     .patrocinadores p {
@@ -281,13 +295,27 @@ main h3 {
         width: 80%;
     }
 
+    .bloco-geral {
+        gap: 4rem;
+        padding: 4.0rem 7rem;
+    }
+
     .bloco-geral h3 {
         font-size: 28px;
     }
 
 }
 
-@media screen and (min-width: 600px) and (max-width: 799px) {
+@media screen and (min-width: 100px) and (max-width: 799px) {
+
+    .whatsapp {
+        width: 2.3rem;
+    }
+
+    .instagram,
+    .youtube {
+        display: none;
+    }
 
     main {
         background-image: url(/images/images-mobile/cahorroRosaMob.png);
@@ -334,29 +362,68 @@ main h3 {
     }
 
     .blocoInformacoesServicos2 {
+        padding-top: 3rem;
+        justify-content: flex-start;
         height: 150vh;
         background-image: url(/images/images-mobile/cachorroPretoMob.png);
         background-size: cover;
     }
 
-/* AJEITAR BLOCO CAHORRO PRETO MOBILE DEIXAR BLOCO PRA CIMA */
+    /* AJEITAR BLOCO CAHORRO PRETO MOBILE DEIXAR BLOCO PRA CIMA */
 
-.informacoesServicos2 {
-    position: relative;
-    padding-bottom: 1rem;
-    align-items: flex-start;
-}
+    .informacoesServicos2 {
+        align-items: flex-start;
+    }
+
+    .bloco-patrocinadores {
+        padding: 2rem;
+    }
+
+    .patrocinadores {
+        flex-direction: column;
+    }
 
     .patrocinadores p {
-        font-size: 28px;
+        padding: 0.5rem;
+        font-size: 20px;
     }
 
     .patrocinadores img {
-        width: 80%;
+        width: 75%;
     }
 
-    .bloco-geral h3 {
-        font-size: 28px;
-    }
+.bloco-geral {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10rem;
+}
 
+.fantastika {
+    gap: 0.2rem;
+    padding-right: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fantastika img {
+    width: 60px;
+    height: 20%;
+}
+
+.fantastika h2 {
+    width: 0;
+    font-size: 40px;
+}
+
+.bloco-informacoes-adicionais {
+    height: auto;
+}
+
+.bloco-atendimento {
+    padding-left: 4rem;
+}
+    
 }
